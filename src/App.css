@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  position: relative;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+.App-header {
+  background-color: #191414;
+  /*min-height: 100vh;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  padding-bottom: 3rem;
+  top: 1rem;
+}
+
+.App-header span {
+  color: #1db954;
+}
+
+#logo {
+  padding-left: 2rem;
+  width: 10rem;
+}

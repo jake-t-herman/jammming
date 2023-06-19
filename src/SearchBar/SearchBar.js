@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
-import './SearchBar/SearchBar.css';
-import magnifier from './SearchBar/magnifying-glass-icon-transparent.png'
+import './SearchBar.css';
+import magnifier from './magnifying-glass-icon-transparent.png'
 
 
 const SearchBar = (props) => {
@@ -9,7 +9,9 @@ const SearchBar = (props) => {
         setsearchVal(e.target.value)
     };
 
-
+    const logger = input => {
+        console.log(searchVal)
+    }
 
     return (
         <section id='searchBarcontainer'>
@@ -20,9 +22,9 @@ const SearchBar = (props) => {
 
                 <button
                     className="searchbutton"
-                    onClick = {props.onSearch(searchVal)}><img src={magnifier}></img></button>
+                    onClick = {logger}><img src={magnifier}></img></button>
         </section>    
     );
 }
 
-export default SearchBar
+export default SearchBar;

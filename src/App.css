@@ -15,7 +15,6 @@ h1 {
 
 .App-header {
   background-color: #191414;
-  /*min-height: 100vh;*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,4 +32,9 @@ h1 {
 #logo {
   padding-left: 2rem;
   width: 10rem;
+}
+
+#resultsANDplaylist {
+  display: flex;
+  justify-content: space-evenly;
 }

@@ -1,15 +1,16 @@
 import React, { useState, useCallback } from 'react';
 import './App.css';
 import monkeyImage from './monkeyheadphones.png'
-import SearchBar from './SearchBar'
-import spotifySearch from './Spotify'
+import SearchBar from './SearchBar/SearchBar'
+import SearchResults from './SearchResults/SearchResults'
 
+/*
 const [searchResults, setSearchResults] = useState([])
 
-const spotifySearch = searchVal => {
+const songSearch = searchVal => {
   SpotifyAPI.search(searchVal).then(setSearchResults)
 }
-
+*/
 
 
 function App() {
@@ -20,6 +21,11 @@ function App() {
         <img src={monkeyImage} alt='monkey wearing headphones logo' id='logo'/>
       </header>
       <SearchBar />
+        <div id='resultsANDplaylist'>
+          <SearchResults songName='chef' artistName='chef'/>
+          <SearchResults />
+        </div>
+
     </div>
   );
 }

@@ -19,12 +19,10 @@ const SearchResults = (props) => {
         )
     )
     */
-
-  
     return (
-        <section className="searchResults">
+        <section className="search results">
             <h2>Search Results</h2>
-            <TrackList Tracks={testdata} />
+            <TrackList Tracks={props.Searchresults} />
             {//<div>{ResultsList}</div>
 }
         </section>

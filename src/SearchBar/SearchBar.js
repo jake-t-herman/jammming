@@ -5,20 +5,21 @@ import magnifier from './magnifying-glass-icon-transparent.png'
 
 const SearchBar = (props) => {
     const [searchVal,setsearchVal] = useState('');
-    const handleSearch = (e) => {
-        setsearchVal(e.target.value)
+    const handleSearch = e => {
+        setsearchVal(e.target.value);
     };
 
-    const logger = input => {
-        console.log(searchVal)
+    const logger = () => {
+        alert(searchVal)
     }
 
     return (
         <section id='searchBarcontainer'>
                      <input type ='search'
                             placeholder = 'Enter a search value'
-                            onChange = {handleSearch}>
-                    </input>
+                            id="searchbar"
+                            onChange = {handleSearch} />
+                    
 
                 <button
                     className="searchbutton"

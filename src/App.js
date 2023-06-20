@@ -3,6 +3,9 @@ import './App.css';
 import monkeyImage from './monkeyheadphones.png'
 import SearchBar from './SearchBar/SearchBar'
 import SearchResults from './SearchResults/SearchResults'
+import Playlist from './Playlist/Playlist'
+
+import testdata from "./TESTDATA";
 
 /*
 const [searchResults, setSearchResults] = useState([])
@@ -22,8 +25,8 @@ function App() {
       </header>
       <SearchBar />
         <div id='resultsANDplaylist'>
-          <SearchResults songName='chef' artistName='chef'/>
-          <SearchResults />
+          <SearchResults Searchresults={testdata}/>
+          <Playlist playlist={testdata} />
         </div>
 
     </div>

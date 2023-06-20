@@ -1,4 +1,4 @@
-.searchResults {
+.results {
     margin: 2rem 0;
     background-color: rgba(29, 185, 84, 0.8);
     justify-content: flex-start;
@@ -13,18 +13,19 @@
 
 }
 
-.searchResults h2 {
+h2 {
     color: white;
     padding-top: 0.5rem;
     font-size: 2rem;
-}
-
-li {
-    list-style: none;
 }
 
 .Track {
     padding: 0.2rem 0;
     margin: 0.2rem 0.5rem;
     border: 1px white solid;
+}
+
+input {
+    color: white;
+    font-size: 2rem;
 }

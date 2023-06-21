@@ -7,7 +7,8 @@ const TrackList = props => {
           {props.Tracks?.map((track) => {
             return (
               <Track    track={track}
-                        key={track.id} />
+                        key={track.id}
+                        listType={props.listType} />
             );
           })}
         </div>

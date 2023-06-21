@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   position: relative;
+  top: 1rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,7 +23,6 @@ h1 {
   font-size: 2rem;
   color: white;
   padding-bottom: 3rem;
-  top: 1rem;
 }
 
 .App-header span {

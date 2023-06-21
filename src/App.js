@@ -7,16 +7,12 @@ import Playlist from './Playlist/Playlist'
 
 import testdata from "./TESTDATA";
 
-/*
-const [searchResults, setSearchResults] = useState([])
-
-const songSearch = searchVal => {
-  SpotifyAPI.search(searchVal).then(setSearchResults)
-}
-*/
 
 
 function App() {
+//const [playlistTracks, setPlaylistTracks] = useState([]);
+
+
   return (
     <div className="App">
       <header className="App-header">

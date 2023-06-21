@@ -21,8 +21,9 @@ const SearchResults = (props) => {
     */
     return (
         <section className="search results">
-            <h2>Search Results</h2>
-            <TrackList Tracks={props.Searchresults} />
+            <h2 className='title'>Search Results</h2>
+            <TrackList  Tracks={props.Searchresults} 
+                        listType='searchlist'/>
             {//<div>{ResultsList}</div>
 }
         </section>

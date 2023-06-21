@@ -13,10 +13,19 @@
 
 }
 
-h2 {
+.title {
     color: white;
-    padding-top: 0.5rem;
+    padding: 0.5rem 0 0 0;
     font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: 800;
+    font-family: 'Geologica', sans-serif;
+    border-radius: 0;
+    height: 2.5rem;
+}
+
+.title :active {
+    background-color: black;
 }
 
 .Track {
@@ -25,7 +34,3 @@ h2 {
     border: 1px white solid;
 }
 
-input {
-    color: white;
-    font-size: 2rem;
-}

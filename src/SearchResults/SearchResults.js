@@ -23,7 +23,8 @@ const SearchResults = (props) => {
         <section className="search results">
             <h2 className='title'>Search Results</h2>
             <TrackList  Tracks={props.Searchresults} 
-                        listType='searchlist'/>
+                        listType='searchlist'
+                        onAdd={props.onAdd}/>
             {//<div>{ResultsList}</div>
 }
         </section>

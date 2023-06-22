@@ -8,7 +8,9 @@ const TrackList = props => {
             return (
               <Track    track={track}
                         key={track.id}
-                        listType={props.listType} />
+                        listType={props.listType}
+                        onAdd={props.onAdd}
+                        onRemove={props.onRemove} />
             );
           })}
         </div>

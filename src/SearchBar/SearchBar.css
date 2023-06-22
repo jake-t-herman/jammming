@@ -24,8 +24,6 @@ input {
     background-color: rgba(29, 185, 84, 0.2);
 }
 
-.searchBarcontainer img {
-    width: 2rem;
-    height: auto;
-    margin: auto;
+.searchBarcontainer button:active {
+    background-color: rgba(29, 185, 84, 1)
 }

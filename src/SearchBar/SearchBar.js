@@ -9,24 +9,27 @@ const SearchBar = (props) => {
         setsearchVal(e.target.value);
     };
 
-    const logger = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         alert(searchVal)
+        setsearchVal('')
     }
 
     return (
-        <section className='searchBarcontainer'>
+        <form className='searchBarcontainer' onSubmit={handleSubmit}>
                      <input type ='search'
                             placeholder = 'Enter a search value'
                             id="searchbar"
-                            onChange = {handleChange} />
+                            onChange = {handleChange}
+                            value={searchVal} />
                     
 
                 <button
-                    
-                    onClick = {logger}>
-                        <img src={magnifier}></img>
+                    style={{fontSize: '1.5rem'}}
+                    type='submit'>🔍
+                        
                 </button>
-        </section>    
+        </form>    
     );
 }
 

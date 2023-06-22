@@ -13,6 +13,10 @@ const Playlist = (props) => {
         return numStr.slice(-4)      
     }
 
+    const testclickalert = () => {
+        alert(`playlist saved`)
+    }
+
     return (
         <section className="playlist results">
             <input 
@@ -22,8 +26,9 @@ const Playlist = (props) => {
                     
                 />
             <TrackList  Tracks={props.playlist}
-                        listType='playlist' />
-            <button id='savetoSpotify'>Save to Spotify</button>
+                        listType='playlist' 
+                        onRemove={props.onRemove}/>
+            <button id='savetoSpotify' onClick={testclickalert}>Save to Spotify</button>
         </section>
     )
 
